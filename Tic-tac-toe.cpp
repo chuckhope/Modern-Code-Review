@@ -107,7 +107,7 @@ cin >> i >> j;
 
  
 
-if (turn == false) 
+if (!turn) 
 
 game[i][j] = 'X'; 
 
