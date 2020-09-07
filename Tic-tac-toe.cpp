@@ -77,67 +77,67 @@ return false;
 
 int main(){ 
 
-int i, j; 
+    int i, j; 
 
-char game[3][3] = {' '}; // Tic-tac-toe 
+    char game[3][3] = {' '}; // Tic-tac-toe 
 
-/* char player1 = 'X'; */ 
+    /* char player1 = 'X'; */ 
 
-/* char player2 = 'O'; */ 
+    /* char player2 = 'O'; */ 
 
-bool turn = true; // false for player 1's turn, true for player 2's turn. Player 1 first. 
+    bool turn = true; // false for player 1's turn, true for player 2's turn. Player 1 first. 
 
-cout << "X = Player 1" << endl << "O = Player 2" << endl; 
+    cout << "X = Player 1" << endl << "O = Player 2" << endl; 
 
-for (int n=0; n<9; n++){ 
+    for (int n=0; n<9; n++){ 
 
-turn = !turn;  // use the not-operator to change true to false or false to true. 
+        turn = !turn;  // use the not-operator to change true to false or false to true. 
 
-if (turn == false)   
+        if (turn == false)   
 
-cout << "Player 1: "; 
+            cout << "Player 1: "; 
 
-else 
+        else 
 
-cout << "Player 2: "; 
+            cout << "Player 2: "; 
 
-cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
+            cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
 
-cin >> i >> j; 
+            cin >> i >> j; 
 
- 
 
-if (turn == false) 
 
-game[i][j] = 'X'; 
+        if (turn == false) 
 
-else  
+            game[i][j] = 'X'; 
 
-game[i][j] = 'O'; 
+        else  
 
-if (isWin(game)){ 
+            game[i][j] = 'O'; 
 
-cout << "Win!" << endl; 
+        if (isWin(game)){ 
 
-break; // need to terminate the problem 
+            cout << "Win!" << endl; 
 
-} 
+        break; // need to terminate the problem 
 
-         if (n==8) // all celles with i=0 to 2 have been inputted above but no winner yet  
+        } 
 
-         cout << "Tie!" << endl;  
+        if (n==8) // all celles with i=0 to 2 have been inputted above but no winner yet  
 
-} 
+                 cout << "Tie!" << endl;  
 
-// show the game to console 
+        } 
 
-cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl; 
+    // show the game to console 
 
-cout << game[1][0] << " " << game[1][1] << " " << game[1][2] << endl; 
+    cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl; 
 
-cout << game[2][0] << " " << game[2][1] << " " << game[2][2] << endl; 
+    cout << game[1][0] << " " << game[1][1] << " " << game[1][2] << endl; 
 
-return 0; 
+    cout << game[2][0] << " " << game[2][1] << " " << game[2][2] << endl; 
+
+    return 0; 
 
 } 
 
