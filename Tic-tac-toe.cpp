@@ -93,27 +93,18 @@ for (int n=0; n<9; n++){
 
 turn = !turn;  // use the not-operator to change true to false or false to true. 
 
-if (turn == false)   
-
-cout << "Player 1: "; 
-
-else 
-
-cout << "Player 2: "; 
-
-cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
-
-cin >> i >> j; 
-
- 
-
-if (turn == false) 
-
-game[i][j] = 'X'; 
-
-else  
-
-game[i][j] = 'O'; 
+if (turn == false){
+    cout << "Player 1: "; 
+    cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
+    cin >> i >> j; 
+    game[i][j] = 'X';
+}
+else{
+    cout << "Player 2: "; 
+    cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
+    cin >> i >> j;
+    game[i][j] = 'O';
+}
 
 if (isWin(game)){ 
 
