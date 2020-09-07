@@ -73,10 +73,7 @@ return false;
 
 } 
 
- 
-
-int main(){ 
-
+void startGame(){
     int i, j; 
 
     char game[3][3] = {' '}; // Tic-tac-toe 
@@ -138,6 +135,10 @@ int main(){
     cout << game[2][0] << " " << game[2][1] << " " << game[2][2] << endl; 
 
     return 0; 
+}
+ 
 
+int main(){ 
+    startGame();
 } 
 
