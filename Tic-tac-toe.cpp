@@ -100,7 +100,7 @@ void startGame(){
 
             cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
 
-            cin >> i >> j; 
+            do {cin >> i >> j} while(i<0||i>2||j<0||j>2); 
 
 
 
